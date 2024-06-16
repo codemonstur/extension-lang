@@ -4,7 +4,7 @@ vendor: com.github.codemonstur
 name: extension-lang
 version: 1.1.0
 packaging: jar
-release: 11
+release: 17
 description: Utility classes for the JDK
 license:
   name: MIT
