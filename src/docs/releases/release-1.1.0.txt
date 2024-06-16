@@ -5,3 +5,4 @@ Added decoding
 Added ByteArrayBuilder
 Added functions
 Readme fix
+Increased to Java 17
