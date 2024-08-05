@@ -6,7 +6,7 @@ public interface CheckedProducer<T> {
     public static <T> T checkedToRuntime(final CheckedProducer<T> producer) {
         try {
             return producer.get();
-        } catch (Exception e) {
+        } catch (final Exception e) {
             throw new RuntimeException(e);
         }
     }
