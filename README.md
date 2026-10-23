@@ -12,6 +12,6 @@ Utility classes for the JDK.
 <dependency>
   <groupId>com.github.codemonstur</groupId>
   <artifactId>extension-lang</artifactId>
-  <version>1.1.0</version>
+  <version>1.2.0</version>
 </dependency>
 ```
