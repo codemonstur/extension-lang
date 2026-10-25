@@ -34,10 +34,11 @@
 
     <properties>
         <module.name>com.github.codemonstur.extension.lang</module.name>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <maven.version>[3.6.3,)</maven.version>
         <maven.compiler.release>17</maven.compiler.release>
+        <maven.version>[3.6.3,)</maven.version>
 
         <version.plugin.check-cves>1.1.0</version.plugin.check-cves>
         <version.plugin.codegrade>0.2.0</version.plugin.codegrade>
