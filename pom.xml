@@ -38,13 +38,13 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <maven.compiler.release>17</maven.compiler.release>
-        <maven.version>[3.6.3,)</maven.version>
+        <maven.version>[3.9.0,)</maven.version>
 
         <version.plugin.check-cves>1.2.0</version.plugin.check-cves>
         <version.plugin.check-license>1.5.0</version.plugin.check-license>
         <version.plugin.codegrade>0.2.0</version.plugin.codegrade>
         <version.plugin.compiler>3.16.0</version.plugin.compiler>
-        <version.plugin.enforcer>3.6.3</version.plugin.enforcer>
+        <version.plugin.enforcer>3.7.0</version.plugin.enforcer>
         <version.plugin.gpg>3.2.8</version.plugin.gpg>
         <version.plugin.jar>3.5.1</version.plugin.jar>
         <version.plugin.javadoc>3.12.0</version.plugin.javadoc>
@@ -54,9 +54,9 @@
             <version.library.pitest-junit5>1.2.3</version.library.pitest-junit5>
 
         <argLine></argLine>
-        <version.plugin.pitest>1.30.1</version.plugin.pitest>
-        <version.plugin.jacoco>0.8.15</version.plugin.jacoco>
-            <version.plugin.surefire>3.6.0</version.plugin.surefire>
+        <version.plugin.pitest>1.30.2</version.plugin.pitest>
+        <version.plugin.jacoco>0.8.16</version.plugin.jacoco>
+            <version.plugin.surefire>3.6.1</version.plugin.surefire>
     </properties>
 
     <dependencies>
@@ -164,7 +164,7 @@
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
-                        <phase>deploy</phase>
+                        <phase>package</phase>
                         <goals><goal>jar</goal></goals>
                     </execution>
                 </executions>
@@ -225,32 +225,7 @@
                             <includeTestDependencies>true</includeTestDependencies>
                             <rules>
                                 <rule>name:regex:.*Apache.*</rule>
-                                <rule>name:regex:.*MIT.*</rule>
-                                <rule>name:regex:.*BSD.*</rule>
                                 <rule>name:regex:.*Eclipse.*</rule>
-                                <rule>name:regex:.*EPL.*</rule>
-                                <rule>name:regex:.*LGPL.*</rule>
-                                <rule>name:regex:.*GPL.*</rule>
-                                <rule>name:regex:.*MPL.*</rule>
-                                <rule>name:regex:.*CDDL.*</rule>
-                                <rule>name:regex:.*Public Domain.*</rule>
-                                <rule>name:regex:.*WTFPL.*</rule>
-                                <rule>name:regex:.*SAX.*</rule>
-                                <rule>name:regex:.*W3C.*</rule>
-                                <rule>name:regex:.*Indiana.*</rule>
-                                <rule>name:regex:.*Common Public.*</rule>
-                                <rule>name:regex:.*Similar to Apache.*</rule>
-                                <rule>name:regex:.*Lesser General Public.*</rule>
-                                <rule>name:regex:.*Mozilla Public License.*</rule>
-                                <rule>name:regex:.*GNU General Public.*</rule>
-                                <rule>name:regex:.*CC0.*</rule>
-                                <rule>name:regex:.*Creative Commons.*</rule>
-                                <rule>name:regex:.*Affero.*</rule>
-                                <rule>name:regex:.*AGPL.*</rule>
-                                <rule>name:regex:.*EDL.*</rule>
-                                <rule>name:regex:.*Bouncy Castle.*</rule>
-                                <rule>name:regex:.*Unicode.*</rule>
-                                <rule>name:regex:.*ICU.*</rule>
                             </rules>
                         
                         </configuration>
